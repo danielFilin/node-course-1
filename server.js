@@ -64,6 +64,12 @@ app.get('/', (req, res) => {
        
     })
  })
+
+ app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+       
+    })
+ })
  
 
 app.get('/bad', (req, res) => {
