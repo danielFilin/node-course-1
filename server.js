@@ -44,15 +44,23 @@ hbs.registerHelper('screamIt', (text) => {
   return text.toUpperCase();
 })
 
-app.get('/about', (req, res) => {
-   res.render('about.hbs', {
-      
-   })
-})
+
 
 app.get('/', (req, res) => {
     res.render('home.hbs', {
         content: "New and interesting info!",
+       
+    })
+ })
+
+ app.get('/about', (req, res) => {
+    res.render('about.hbs', {
+       
+    })
+ })
+
+ app.get('/news', (req, res) => {
+    res.render('news.hbs', {
        
     })
  })
